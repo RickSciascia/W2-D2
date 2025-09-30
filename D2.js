@@ -131,10 +131,45 @@ if (shoppingCartBlackFriday > 50) {
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-let n7 = 12;
-let n8 = 5;
-let n9 = 15;
+console.log("Esercizio 7");
+let n7 = 2;
+let n8 = 151;
+let n9 = 10;
+let o1, o2, o3;
 
+if (n7 >= n8 && n7 >= n9) {
+  o1 = n7; //il primo è n7
+  if (n8 >= n9) {
+    //il secondo sarà n8
+    o2 = n8;
+    o3 = n9;
+  } else {
+    //altrimenti il secondo è n9
+    o2 = n9;
+    o3 = n8;
+  }
+} else if (n8 >= n7 && n8 >= n9) {
+  o1 = n8; //il primo è n8
+  if (n7 >= n9) {
+    o2 = n7; //il secondo è n7
+    o3 = n9;
+  } else {
+    // altrimenti il secondo è n9
+    o2 = n9;
+    o3 = n7;
+  }
+} else if (n9 >= n7 && n9 >= n8) {
+  o1 = n9; // il primo è n9
+  if (n7 >= n8) {
+    o2 = n7;
+    o3 = n8;
+  }
+} else {
+  o2 = n8;
+  o3 = n7;
+}
+
+console.log("i valori ordinati sono:", o1, o2, o3);
 /* ESERCIZIO 8
   Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
 */
